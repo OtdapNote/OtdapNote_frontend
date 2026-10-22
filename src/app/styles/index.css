@@ -1,0 +1,147 @@
+@import "tailwindcss";
+@import "./tokens.css";
+@import "./base.css";
+
+/* 다크에서 값이 바뀌는 토큰: tokens.css 변수를 참조한다 */
+@theme inline {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --color-paper-base: var(--paper-base);
+  --color-paper-raised: var(--paper-raised);
+  --color-paper-well: var(--paper-well);
+  --color-paper-high: var(--paper-high);
+  --color-paper-edge: var(--paper-edge);
+  --color-paper-highlight: var(--paper-highlight);
+  --color-ink-primary: var(--ink-primary);
+  --color-ink-secondary: var(--ink-secondary);
+  --color-ink-tertiary: var(--ink-tertiary);
+  --color-ink-disabled: var(--ink-disabled);
+  --color-ink-on-accent: var(--ink-on-accent);
+  --color-stone-default: var(--stone-default);
+  --color-stone-pressed: var(--stone-pressed);
+  --color-stone-soft: var(--stone-soft);
+  --color-accent-default: var(--accent-default);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-pressed: var(--accent-pressed);
+  --color-accent-soft: var(--accent-soft);
+  --color-focus-ring: var(--focus-ring);
+  --color-pen-red: var(--pen-red);
+  --color-pen-red-soft: var(--pen-red-soft);
+  --color-grade-a: var(--grade-a);
+  --color-grade-b: var(--grade-b);
+  --color-grade-c: var(--grade-c);
+  --color-grade-d: var(--grade-d);
+  --color-grade-f: var(--grade-f);
+  --color-tag-combo: var(--tag-combo);
+  --color-tag-item: var(--tag-item);
+  --color-tag-context: var(--tag-context);
+
+  --shadow-*: initial;
+  --shadow-raised-1: var(--raised-1);
+  --shadow-raised-2: var(--raised-2);
+  --shadow-raised-3: var(--raised-3);
+  --shadow-inset-1: var(--inset-1);
+  --shadow-inset-2: var(--inset-2);
+  --shadow-lift: var(--color-lift);
+
+  --font-*: initial;
+  --font-sans: var(--font);
+  --font-num: var(--font-num);
+}
+
+/* 다크에서도 그대로인 토큰: 값을 직접 쓴다 */
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-md: 768px;
+  --breakpoint-xl: 1200px;
+
+  --radius-*: initial;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
+
+  --spacing-*: initial;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+
+  --font-weight-*: initial;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  /* 글자 크기 15단계 (Figma 04 타이포그래피) */
+  --text-*: initial;
+  --text-display: 36px;
+  --text-display--line-height: 44px;
+  --text-display--letter-spacing: -0.02em;
+  --text-display--font-weight: 900;
+  --text-title-l: 26px;
+  --text-title-l--line-height: 34px;
+  --text-title-l--letter-spacing: -0.015em;
+  --text-title-l--font-weight: 700;
+  --text-title-m: 20px;
+  --text-title-m--line-height: 28px;
+  --text-title-m--letter-spacing: -0.01em;
+  --text-title-m--font-weight: 700;
+  --text-title-s: 17px;
+  --text-title-s--line-height: 24px;
+  --text-title-s--letter-spacing: -0.01em;
+  --text-title-s--font-weight: 700;
+  --text-body-l: 16px;
+  --text-body-l--line-height: 25px;
+  --text-body-l--letter-spacing: -0.005em;
+  --text-body-l--font-weight: 400;
+  --text-body-m: 14px;
+  --text-body-m--line-height: 22px;
+  --text-body-m--letter-spacing: -0.005em;
+  --text-body-m--font-weight: 400;
+  --text-body-s: 13px;
+  --text-body-s--line-height: 19px;
+  --text-body-s--letter-spacing: 0em;
+  --text-body-s--font-weight: 400;
+  --text-label-l: 16px;
+  --text-label-l--line-height: 20px;
+  --text-label-l--letter-spacing: -0.005em;
+  --text-label-l--font-weight: 700;
+  --text-label-m: 14px;
+  --text-label-m--line-height: 18px;
+  --text-label-m--letter-spacing: -0.005em;
+  --text-label-m--font-weight: 500;
+  --text-label-s: 13px;
+  --text-label-s--line-height: 16px;
+  --text-label-s--letter-spacing: 0em;
+  --text-label-s--font-weight: 700;
+  --text-caption: 12px;
+  --text-caption--line-height: 16px;
+  --text-caption--letter-spacing: 0em;
+  --text-caption--font-weight: 500;
+  --text-micro: 11px;
+  --text-micro--line-height: 14px;
+  --text-micro--letter-spacing: 0em;
+  --text-micro--font-weight: 500;
+  --text-grade-xl: 52px;
+  --text-grade-xl--line-height: 52px;
+  --text-grade-xl--letter-spacing: -0.02em;
+  --text-grade-xl--font-weight: 700;
+  --text-grade-m: 24px;
+  --text-grade-m--line-height: 26px;
+  --text-grade-m--letter-spacing: -0.01em;
+  --text-grade-m--font-weight: 700;
+  --text-number: 14px;
+  --text-number--line-height: 18px;
+  --text-number--letter-spacing: 0em;
+  --text-number--font-weight: 600;
+}

@@ -1,0 +1,135 @@
+/* 옷답노트 디자인 토큰 (Figma 디자인 시스템 Docs 07-1 tokens.css) */
+:root {
+  color-scheme: light;
+  --paper-base: #ECEBE7;
+  --paper-raised: #F3F2EF;
+  --paper-well: #E3E2DD;
+  --paper-high: #FBFAF8;
+  --paper-edge: #D6D5CF;
+  --paper-highlight: #FCFCFA;
+  --ink-primary: #1D1D20;
+  --ink-secondary: #5C5C62;
+  --ink-tertiary: #76767C;
+  --ink-disabled: #B4B4B8;
+  --ink-on-accent: #FFFFFF;
+  --stone-default: #A9A9AE;
+  --stone-pressed: #919197;
+  --stone-soft: #CFCFD2;
+  --accent-default: #2F6BF2;
+  --accent-hover: #4A80F5;
+  --accent-pressed: #2456CC;
+  --accent-soft: #DDE7FD;
+  --focus-ring: #8FB0F8;
+  --pen-red: #E5484D;
+  --pen-red-soft: #FBE3E3;
+  --grade-a: #1F9D6B;
+  --grade-b: #2F6BF2;
+  --grade-c: #D49A16;
+  --grade-d: #E0692B;
+  --grade-f: #E5484D;
+  --tag-combo: #7A5AF8;
+  --tag-item: #129C9C;
+  --tag-context: #D49A16;
+  --sd: rgba(167, 164, 155, 0.42);
+  --sd-deep: rgba(167, 164, 155, 0.55);
+  --sl: #fff;
+  --raised-1: 2px 2px 5px var(--sd), -2px -2px 5px var(--sl);
+  --raised-2: 4px 5px 11px var(--sd), -4px -4px 10px var(--sl);
+  --raised-3: 8px 12px 26px var(--sd), -6px -6px 16px var(--sl);
+  --inset-1: inset 2px 2px 5px var(--sd), inset -2px -2px 4px var(--sl);
+  --inset-2: inset 3px 4px 8px var(--sd-deep), inset -3px -3px 6px var(--sl);
+  --color-lift: 3px 6px 12px rgba(36, 86, 204, 0.32), -4px -4px 10px var(--sl), inset 1px 1px 1px rgba(255, 255, 255, 0.35);
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+}
+
+/* 다크: 같은 이름을 다시 정의한다.
+   시스템 설정이 다크일 때(아래 @media)와 사용자가 직접 다크를 골랐을 때(data-theme) 둘 다 적용되도록
+   두 블록의 값은 똑같아야 한다. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper-base: #26272B;
+    --paper-raised: #2C2D32;
+    --paper-well: #202125;
+    --paper-high: #3D3E45;
+    --paper-edge: #3A3B41;
+    --paper-highlight: #36373D;
+    --ink-primary: #F2F2F0;
+    --ink-secondary: #B6B6BC;
+    --ink-tertiary: #94949C;
+    --ink-disabled: #5C5D64;
+    --ink-on-accent: #FFFFFF;
+    --stone-default: #5E5F68;
+    --stone-pressed: #4C4D55;
+    --stone-soft: #46474E;
+    --accent-default: #4F7DF0;
+    --accent-hover: #6690F5;
+    --accent-pressed: #3D68D6;
+    --accent-soft: #26345C;
+    --focus-ring: #8FB0F8;
+    --pen-red: #FF6B6F;
+    --pen-red-soft: #4A2628;
+    --grade-a: #3CC48C;
+    --grade-b: #6E9BFF;
+    --grade-c: #F0B93A;
+    --grade-d: #FF8A4C;
+    --grade-f: #FF6B6F;
+    --tag-combo: #9C85FF;
+    --tag-item: #2FC4C4;
+    --tag-context: #F0B93A;
+    --sd: rgba(0, 0, 0, 0.5);
+    --sd-deep: rgba(0, 0, 0, 0.6);
+    --sl: rgba(255, 255, 255, 0.07);
+    --color-lift: 3px 6px 12px rgba(14, 36, 102, 0.55), -4px -4px 10px var(--sl), inset 1px 1px 1px rgba(255, 255, 255, 0.25);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper-base: #26272B;
+  --paper-raised: #2C2D32;
+  --paper-well: #202125;
+  --paper-high: #3D3E45;
+  --paper-edge: #3A3B41;
+  --paper-highlight: #36373D;
+  --ink-primary: #F2F2F0;
+  --ink-secondary: #B6B6BC;
+  --ink-tertiary: #94949C;
+  --ink-disabled: #5C5D64;
+  --ink-on-accent: #FFFFFF;
+  --stone-default: #5E5F68;
+  --stone-pressed: #4C4D55;
+  --stone-soft: #46474E;
+  --accent-default: #4F7DF0;
+  --accent-hover: #6690F5;
+  --accent-pressed: #3D68D6;
+  --accent-soft: #26345C;
+  --focus-ring: #8FB0F8;
+  --pen-red: #FF6B6F;
+  --pen-red-soft: #4A2628;
+  --grade-a: #3CC48C;
+  --grade-b: #6E9BFF;
+  --grade-c: #F0B93A;
+  --grade-d: #FF8A4C;
+  --grade-f: #FF6B6F;
+  --tag-combo: #9C85FF;
+  --tag-item: #2FC4C4;
+  --tag-context: #F0B93A;
+  --sd: rgba(0, 0, 0, 0.5);
+  --sd-deep: rgba(0, 0, 0, 0.6);
+  --sl: rgba(255, 255, 255, 0.07);
+  --color-lift: 3px 6px 12px rgba(14, 36, 102, 0.55), -4px -4px 10px var(--sl), inset 1px 1px 1px rgba(255, 255, 255, 0.25);
+}
