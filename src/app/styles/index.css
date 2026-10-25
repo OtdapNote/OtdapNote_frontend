@@ -57,6 +57,9 @@
   --breakpoint-md: 768px;
   --breakpoint-xl: 1200px;
 
+  --container-*: initial;
+  --container-content: 1120px;
+
   --radius-*: initial;
   --radius-sm: 12px;
   --radius-md: 16px;
@@ -74,6 +77,15 @@
   --spacing-24: 24px;
   --spacing-32: 32px;
   --spacing-40: 40px;
+  /* 44 이상은 크기(h·w·size) 전용이고, padding·gap·margin에는 쓰지 않는다 */
+  --spacing-44: 44px;
+  --spacing-52: 52px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-96: 96px;
+  --spacing-104: 104px;
+  --spacing-248: 248px;
 
   --font-weight-*: initial;
   --font-weight-regular: 400;
