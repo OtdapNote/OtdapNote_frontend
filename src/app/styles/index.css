@@ -37,11 +37,25 @@
   --color-tag-combo: var(--tag-combo);
   --color-tag-item: var(--tag-item);
   --color-tag-context: var(--tag-context);
+  --color-paper-edge-strong: var(--paper-edge-strong);
+  --color-overlay-dim: var(--overlay-dim);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-link: var(--text-link);
+  --color-text-danger: var(--text-danger);
+  --color-text-grade-a: var(--text-grade-a);
+  --color-text-grade-b: var(--text-grade-b);
+  --color-text-grade-c: var(--text-grade-c);
+  --color-text-grade-d: var(--text-grade-d);
+  --color-text-grade-f: var(--text-grade-f);
+  --color-text-tag-combo: var(--text-tag-combo);
+  --color-text-tag-item: var(--text-tag-item);
+  --color-text-tag-context: var(--text-tag-context);
 
   --shadow-*: initial;
   --shadow-raised-1: var(--raised-1);
   --shadow-raised-2: var(--raised-2);
   --shadow-raised-3: var(--raised-3);
+  --shadow-raised-4: var(--raised-4);
   --shadow-inset-1: var(--inset-1);
   --shadow-inset-2: var(--inset-2);
   --shadow-lift: var(--color-lift);
@@ -59,6 +73,10 @@
 
   --container-*: initial;
   --container-content: 1120px;
+  --container-dialog: 400px;
+
+  --blur-*: initial;
+  --blur-dim: 20px;
 
   --radius-*: initial;
   --radius-sm: 12px;
@@ -75,6 +93,7 @@
   --spacing-16: 16px;
   --spacing-20: 20px;
   --spacing-24: 24px;
+  --spacing-28: 28px;
   --spacing-32: 32px;
   --spacing-40: 40px;
   /* 44 이상은 크기(h·w·size) 전용이고, padding·gap·margin에는 쓰지 않는다 */
