@@ -74,6 +74,7 @@
   --container-*: initial;
   --container-content: 1120px;
   --container-dialog: 400px;
+  --container-empty-state: 320px;
 
   --blur-*: initial;
   --blur-dim: 20px;
@@ -84,11 +85,16 @@
   --radius-lg: 24px;
   --radius-xl: 32px;
   --radius-full: 999px;
+  /* Figma 컴포넌트 전용 모서리 */
+  --radius-logo: 13px;
+  --radius-card-photo: 20px;
 
   --spacing-*: initial;
   --spacing-2: 2px;
   --spacing-4: 4px;
+  --spacing-6: 6px;
   --spacing-8: 8px;
+  --spacing-10: 10px;
   --spacing-12: 12px;
   --spacing-16: 16px;
   --spacing-20: 20px;
@@ -96,8 +102,13 @@
   --spacing-28: 28px;
   --spacing-32: 32px;
   --spacing-40: 40px;
+  /* 아이콘 크기 전용 (size-*). padding·gap·margin에는 쓰지 않는다 */
+  --spacing-22: 22px;
+  --spacing-26: 26px;
+  --spacing-36: 36px;
   /* 44 이상은 크기(h·w·size) 전용이고, padding·gap·margin에는 쓰지 않는다 */
   --spacing-44: 44px;
+  --spacing-48: 48px;
   --spacing-52: 52px;
   --spacing-56: 56px;
   --spacing-64: 64px;
