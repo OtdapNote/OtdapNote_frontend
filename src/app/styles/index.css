@@ -77,7 +77,7 @@
   --container-empty-state: 320px;
 
   --blur-*: initial;
-  --blur-dim: 20px;
+  --blur-dim: 10px;
 
   --radius-*: initial;
   --radius-sm: 12px;
