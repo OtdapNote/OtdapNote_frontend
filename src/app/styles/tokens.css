@@ -105,9 +105,8 @@
     --tag-combo: #9C85FF;
     --tag-item: #2FC4C4;
     --tag-context: #F0B93A;
-    /* TODO: Figma 12 문서에 다크 값이 없어 같은 계열의 기존 다크 색을 임시로 씀. 디자인 확정 후 교체 (이슈 #10) */
     --text-tertiary: #94949C;
-    --text-link: #6690F5;
+    --text-link: #6E9BFF;
     --text-danger: #FF6B6F;
     --text-grade-a: #3CC48C;
     --text-grade-b: #6E9BFF;
