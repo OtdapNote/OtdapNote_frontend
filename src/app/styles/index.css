@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "./tokens.css";
-@import "./base.css";
+@import "./base.css" layer(base);
 
 /* 다크에서 값이 바뀌는 토큰: tokens.css 변수를 참조한다 */
 @theme inline {
